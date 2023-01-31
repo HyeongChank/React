@@ -1,15 +1,15 @@
-import './02/Box.css';
 
-import Boxheader from './02/Boxheader';
-import Boxmain from './02/Boxmain';
-
+// import Frcstmain from './04/Frcstmain';
+// import Frcstheader from './04/Frcstheader';
+import Frcst from './04/Frcst';
+import './04/Frcst.css';
 const App = () => {
   return (
 
     <div>
-      {/* <Box /> */}
-      <Boxheader />
-      <Boxmain />
+      <Frcst />
+      {/* <Frcstheader /> */}
+      {/* <Frcstmain /> */}
 
     </div>
     
