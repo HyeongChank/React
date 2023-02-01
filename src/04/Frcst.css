@@ -1,3 +1,9 @@
+p{
+    background-color: red;
+    height: 10vh;
+    font-size: 20px;
+    color: white;
+}
 .bheader{
     background-color: blue;
     color: white;
@@ -11,7 +17,7 @@
     display: flex;
     justify-content: center;
     width: 100vw;
-    height: 90vh;
+    height: 80vh;
     flex-direction: row;
     align-items: top;
     background-color: rgba(187, 202, 206, 0.342);
