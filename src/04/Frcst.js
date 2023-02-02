@@ -90,8 +90,8 @@ const Frcst = () => {
             <Frcstheader />
             <p>{dt}</p>
             <div className="main">
-                <Frcdt dt={fcrdt} setDt={setDt} />
-                <Frccn cn={cn} />
+                <Frcdt fcrdt={fcrdt} setDt={setDt} />
+                <Frccn cn={cn} dt={dt} />
             </div>
 
         </>

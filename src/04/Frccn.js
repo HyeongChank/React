@@ -1,12 +1,12 @@
 
 
-const Frccn = ({cn}) => {
+const Frccn = ({cn, dt}) => {
     console.log("cn ",cn);
     let infoArry = cn.split(',');
-    
+    let kn =0;
     infoArry = infoArry.map((item2) => 
     
-    <li>
+    <li key ={dt+kn++}>
         <span>{item2.split(':')[0]}</span>(
             {
             item2.includes('높음') ?
