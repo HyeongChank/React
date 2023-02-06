@@ -126,7 +126,8 @@ const Gal = () => {
           }
         }
       }
-  
+    //let listt = data.response.body.items.item;
+    //let c1 = listt.map((k)=>k.getTitle)
 
     let list = data.response.body.items;
       console.log(list);
