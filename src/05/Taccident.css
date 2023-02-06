@@ -36,10 +36,15 @@
  
     margin: 10px;
 }
-.c1List:hover, .c1List:active{
+.c1List:hover, .c1List:active, .tcardsel{
     background-color: black;
     color: white;
     cursor: pointer;
+    border: 1px solid black;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
 }
 .Tcdetail{
     width: 40vw;
@@ -49,11 +54,26 @@
     margin: 10px;
     background-color: skyblue;
     border: 1px solid black;
+    flex-direction: column;
 }
+
 .c1List{
     border: 1px solid black;
     margin: 10px;
     border-radius: 10px;
     padding: 10px;
     text-align: center;
+}
+.TcdetailCard{
+    border: 1px solid black;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.sp1{
+    background-color: red;
+}
+.sp2{
+    background-color: blue;
 }

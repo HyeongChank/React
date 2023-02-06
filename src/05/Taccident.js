@@ -204,19 +204,20 @@ const Taccident = () => {
       //   console.log(k, v);
       // }
 
-      let c11 = data.map((item)=>item.사고유형_대분류);
-      let c21 = data.map((item) => item.사고유형_중분류);
-      console.log("c11", c11)
-      console.log("c21", c21)
+      // let c11 = data.map((item)=>item.사고유형_대분류);
+      // let c21 = data.map((item) => item.사고유형_중분류);
+      // console.log("c11", c11)
+      // console.log("c21", c21)
 
-      let cobj = {};
-      for(let [k,v] of c21.entries()){
-        cobj[v] = c11[k];
+      // let cobj = {};
+      // for(let [k,v] of c21.entries()){
+      //   cobj[v] = c11[k];
         
-      }
-      console.log("cobj",cobj); 
+      // }
+      // console.log("cobj",cobj); 
       // 숙제 : {차대사람 : '횡단중, 차도통행증 .....}
 
+      
 
       // let cobj =[];
       // for(let [idx, k] of c1.entries){

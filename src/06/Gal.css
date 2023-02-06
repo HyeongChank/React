@@ -1,0 +1,85 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    flex-direction: row;
+   
+    width: 100vw;
+    height:100vh;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+
+
+    flex-direction: column;
+    margin: 10px;
+}
+.c1view{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 15px;
+    width: 400px;
+   
+   
+    border-radius: 10px;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+.c1view:hover{
+    background-color: black;
+    color: white;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+ 
+    background-color: skyblue;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.spImage{
+    width: 300px;
+    height: 300px;
+
+}
+.cont{
+    border: 1px solid black;
+    width: 500px;
+    background-color: white;
+    padding-bottom: 10px;
+    
+}
+.spImage>img{
+    width: 500px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.sp1{
+    margin-top: 20px;
+    font-size: 40px;
+    color: gray;
+}
+.sp2{
+    font-size: 30px;
+
+}
+.sp3{
+    font-size: 30px;
+    color: blueviolet;
+}
+.sp4{
+    font-size: 25px;
+}

@@ -1,13 +1,16 @@
-const Tc1 =({c1, setc1use}) =>{
+import { useEffect } from "react";
 
-    let c1Tag = [...c1];
+const Tc1 =({c1, setselc1,selc1}) =>{
+
    
+   //대분류가 클릭되었을 때
     const show =(v)=>{
-        setc1use(v);
+        setselc1(v);
     };
-    c1Tag = c1Tag.map((v) => 
-    <div className="c1List" onClick={() => show(v)}>{v}</div>
+    const c1Tag = c1.map((v) => 
+    <div className={v ===selc1 ? "tcardsel" : "c1List"} key={v} onClick={() => show(v)}>{v}</div>
     );
+
 
     return(
         <>
