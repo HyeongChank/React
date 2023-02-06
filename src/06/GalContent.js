@@ -1,9 +1,8 @@
 const GalContent = ({ selc2 }) => {
     console.log("selc2", selc2);
-    // let keys=["galTitle", "galPhotographyLocation","galPhotographer","galPhotographyMonth","galSearchKeyword"];
-
-    let dTag;
-
+ 
+    let dTag = <h1>부산 관광지 중 하나를 선택해 주세요</h1>
+    
     if (selc2.length > 0) {
         dTag = <div className="cont">
             <div className="spImage"><img src={selc2[0][1]}></img></div>

@@ -54,11 +54,15 @@
 }
 .cont{
     border: 1px solid black;
-    width: 400px;
+    width: 350px;
     background-color: white;
     padding-bottom: 10px;
 
     
+}
+h1{
+    padding: 20px;
+    text-align: center;
 }
 .spImage>img{
     width: 100%;

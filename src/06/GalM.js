@@ -8,7 +8,7 @@ const GalM =({c1, c2, list}) =>{
     console.log(c1);
     let [selc1, setselc1] = useState();
     let [selc2, setselc2] = useState([]);
-    let [selc2a, setselc2a] = useState();
+
 
     console.log("selc2",selc2);
 
@@ -21,16 +21,8 @@ const GalM =({c1, c2, list}) =>{
         console.log("selc2",selc2)
     },[selc2]);
 
-    // useEffect(()=>{
-    //     if(selc1&&selc2){
-    //         setseldata(list.filter((i)=> i.galPhotographyLocation===selc1)&&i.[0])
-    //     }
-    // },[selc2]);
-
-    // useEffect(()=>{
-    //     console.log("seldata",seldata)
-    // },[seldata]);
-
+  
+//selc2 초기값없기 때문에 오류남 selc2&& 붙여서 해결
     return(
         <div className="main">
         
