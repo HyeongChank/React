@@ -16,7 +16,7 @@
 
 
     flex-direction: column;
-    margin: 10px;
+    padding-right: 50px;
 }
 .c1view{
     display: flex;
@@ -24,9 +24,7 @@
     align-items: center;
     margin: 10px;
     padding: 15px;
-    width: 400px;
-   
-   
+    width: 350px;
     border-radius: 10px;
     border: 1px solid gray;
     cursor: pointer;
@@ -35,16 +33,30 @@
     background-color: black;
     color: white;
 }
+.selc1view{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 15px;
+    width: 350px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid gray;
+    cursor: pointer;
+}
 .content{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
     height: 100%;
+    padding-left: 150px;
  
     background-color: skyblue;
     flex-direction: column;
-    margin: 10px;
+
 }
 
 .spImage{
@@ -54,9 +66,10 @@
 }
 .cont{
     border: 1px solid black;
-    width: 350px;
+    width: 400px;
     background-color: white;
     padding-bottom: 10px;
+
 
     
 }
@@ -79,7 +92,7 @@ h1{
     padding: 5px;
 }
 .sp2{
-    font-size: 30px;
+    font-size: 28px;
     padding: 5px;
 }
 .sp3{

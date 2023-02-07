@@ -4,7 +4,7 @@ const GalTitle =({c1, selc1, setselc1}) =>{
         setselc1(v);
     };
     const c1Tag = c1.map((v) => 
-    <div className="c1view" key={v} onClick={() => show(v)}>{v}</div>
+    <div className={v===selc1 ? "selc1view" : "c1view"} key={v} onClick={() => show(v)}>{v}</div>
     );
     return(
         <>

@@ -36,6 +36,8 @@ const Frcst = () => {
     // console.log(item);
     let fcrdt = ["frcstOneDt", "frcstTwoDt", "frcstThreeDt", "frcstFourDt"];
     let fcrcn = ["frcstOneCn", "frcstTwoCn", "frcstThreeCn", "frcstFourCn"];
+    console.log(fcrdt);
+    console.log(fcrch);
     fcrdt = fcrdt.map((k) => items[0][k]);
     fcrcn = fcrcn.map((k) => items[0][k]);
 

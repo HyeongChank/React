@@ -11,7 +11,7 @@ const GalM =({c1, c2, list}) =>{
 
 
     console.log("selc2",selc2);
-
+//selc1이 바뀔 때마다 useEffect 안의 내용 실행
     useEffect(() => {
         console.log("selc1",selc1);
         setselc2(c2.filter((i)=>i[0]===selc1));
