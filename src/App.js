@@ -1,6 +1,6 @@
 
-import Gal from "./06/Gal";
-
+// import Gal from "./06/Gal";
+import Mycom from "./07/Mycom";
 // import Mydiv from './03/Mydiv';
 // import Frcst from './04/Frcst';
 // import './04/Frcst.css';
@@ -11,7 +11,8 @@ const App = () => {
       {/* <Mydiv/> */}
       {/* <Frcst /> */}
       {/* {<Taccident/>} */}
-      {<Gal/>}
+      {/* {<Gal/>} */}
+      <Mycom/>
 
     </div>
     
