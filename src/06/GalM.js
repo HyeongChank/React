@@ -20,7 +20,6 @@ const GalM =({c1, c2, list}) =>{
     useEffect(() =>{
         console.log("selc2",selc2)
     },[selc2]);
-
   
 //selc2 초기값없기 때문에 오류남 selc2&& 붙여서 해결
     return(

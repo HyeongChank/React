@@ -33,7 +33,6 @@ const GalTitle =({c1, selc1, setselc1}) =>{
         console.log("temp",temp);
         return;
 
-       
     }
 
 
