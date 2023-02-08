@@ -21,6 +21,7 @@ const GalContent = ({ selc2 }) => {
 
     return (
         <>
+        
             <div className="content">{dTag}</div>
         </>
     );

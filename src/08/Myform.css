@@ -1,0 +1,24 @@
+input[type=text],
+[type=password] {
+    width: 90%;
+    background-color: rgba(0, 128, 0, 0.267);
+}
+p{
+    background-color: rgba(0, 0, 255, 0.13);
+    width: 40%;
+    height: 50px;
+}
+.button{
+    background-color: yellow;
+    border: 1px solid black;
+    width: 40%;
+    height: 30px;
+    margin: 10px;
+}
+.button:hover{
+    cursor: pointer;
+    background-color: white;
+}
+#msg>span{
+    color: blue;
+}

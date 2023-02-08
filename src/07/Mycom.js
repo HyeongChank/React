@@ -1,4 +1,4 @@
-import userEvent from "@testing-library/user-event";
+
 import { useState, useEffect, useRef } from "react";
 
 const Mycom = () => {
