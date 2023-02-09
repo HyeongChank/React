@@ -1,5 +1,6 @@
 import GalM from "./GalM";
 import data from "../DB/data.json";
+import Practice from "./Practice";
 //한국관광공사_관광사진 정보_GW
 // https://apis.data.go.kr/B551011/PhotoGalleryService1/gallerySearchList1?serviceKey=서비스키&numOfRows=10&pageNo=1&MobileOS=ETC&MobileApp=AppTest&arrange=A&keyword=%eb%b6%80%ec%82%b0+%ec%b6%95%ec%a0%9c&_type=json
 // galContentId	string  콘텐츠 아이디
@@ -31,6 +32,7 @@ const Gal = () => {
     return (
         <>
         <GalM c1={c1} c2={c2} list={list}/>
+      
         </>
     ); 
 }

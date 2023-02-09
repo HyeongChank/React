@@ -1,4 +1,4 @@
-.header{
+/* .header{
     height: 10vh;
     background-color: blue;
 }
@@ -32,7 +32,7 @@
 form{
     width: 300px;
     display: flex;
-    /* flex-direction: row; */
+    /* flex-direction: row; 
     
 }
 .hsearch span{
@@ -136,4 +136,23 @@ h1{
 }
 .sp5{
     padding: 5px;
+}
+ */
+.content{
+    width: 500px;
+    height: 500px;
+}
+.main{
+    width: 80%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card1>img{
+    width: 80%;
+    height: 100px;
+    margin: 10px;
 }

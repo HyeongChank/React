@@ -19,7 +19,7 @@ const GalTitle =({c1, selc1, setselc1}) =>{
         txtR.current.focus();
         
     },[])
-
+   
     const showC1 =() =>{
         
         console.log(txtR.current.value);

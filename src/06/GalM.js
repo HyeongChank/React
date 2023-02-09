@@ -3,6 +3,7 @@ import GalContent from "./GalContent";
 import GalTitle from "./GalTitle";
 import './Gal.css'
 import { useState, useEffect ,useRef} from "react";
+import Practice from "./Practice";
 
 const GalM =({c1, c2, list}) =>{
     console.log(c1);
@@ -28,6 +29,7 @@ const GalM =({c1, c2, list}) =>{
         <div className="main">
             <GalTitle c1={c1} selc1={selc1} setselc1={setselc1}/>
             {selc2 && <GalContent selc2={selc2} />}
+            <Practice selc2 ={selc2}/>
         </div>
         </>
     );
