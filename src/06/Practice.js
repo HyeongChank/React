@@ -10,7 +10,6 @@ const Practice = () => {
     console.log("c11", c1);
     let c2 = item.map((k) => [k.galTitle, k.galWebImageUrl]);
     console.log("c21", c2)
-    let [selc1, setselc1] = useState();
     let [arrayTag, setarrayTag] = useState();
 
     // const show =(v)=>{
@@ -39,7 +38,7 @@ const Practice = () => {
         let temp2 = Object.values(temp[0]);
         let temp3 = temp2[3];
         console.log("temp3",temp3);
-        setarrayTag(()=><img src={temp3}></img>)
+        setarrayTag(()=><div className='card'><img src={temp3}></img></div>)
        
         // setarrayTag(c1.map((k)=>k.galTitle===sel1R.current.value)
         // );

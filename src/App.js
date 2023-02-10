@@ -4,9 +4,11 @@
 // import Mydiv from './03/Mydiv';
 // import Frcst from './04/Frcst';
 // import './04/Frcst.css';
-import Practice from "./06/Practice";
+// import Practice from "./06/Practice";
 // import Myform from "./08/Myform";
-import Routemain from "./09/Routemain";
+import Wmain from "./10/Wmain";
+
+// import Routemain from "./09/Routemain";
 import { BrowserRouter } from "react-router-dom";
 
 const App = () => {
@@ -19,10 +21,13 @@ const App = () => {
       {/* {<Gal/>} */}
       {/* <Mycom/> */}
       {/* <Myform/> */}
-      <Practice/>
-      {/* <BrowserRouter>
-      <Routemain/>
-      </BrowserRouter> */}
+      {/* <Practice/> */}
+      {/* <BrowserRouter>*/
+     /* <Routemain/>*/
+     /* </BrowserRouter> */}
+      <BrowserRouter>
+      <Wmain/>
+      </BrowserRouter>
     </div>
     
   );
