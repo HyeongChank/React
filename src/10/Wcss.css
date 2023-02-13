@@ -42,7 +42,7 @@ li{
 .sp0>div, .sp1>div, .sp2>div{
     width: 130px;
     margin: 5px;
-    border: 1px s olid black;
+    border: 1px solid black;
     height: 50px;
     display: flex;
     justify-content: center;

@@ -1,0 +1,24 @@
+.header{
+    width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header>img{
+    width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
