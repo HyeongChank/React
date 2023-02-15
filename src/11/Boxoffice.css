@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.mvhead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    color: white;
+    height: 100px;
+}
+.mvhead>form, .mvhead>h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.mvhead>form{
+    width : 30%;
+}
+.mvhead>form>input{
+    height: 40px;
+}
+.mvmain{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100vw;
+    height: 500px;
+}
+.list{
+    display: flex;
+    justify-content: center;
+    width: 60vw;
+    border-right: 1px solid black;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    width: 40vw;
+}

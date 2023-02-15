@@ -14,13 +14,13 @@ const Home = () => {
 
     return (
         <>
-            <div className="header">헤더{head}</div>
+            <div className="header"><img src={head}/></div>
             <div className="content"> 
                 <div className="menu">
-                <li><Link to='/'>{home}</Link></li>
-                <li><Link to='/p1/profile'>{profile}</Link></li>
-                <li><Link to='/p2/sns'>{sns}</Link></li>
-                <li><Link to='/p3/news'>{news}</Link></li>
+                <li><Link to='/'><img src={home}/></Link></li>
+                <li><Link to='/p1/profile'><img src={profile}/></Link></li>
+                <li><Link to='/p2/sns'><img src={sns}/></Link></li>
+                <li><Link to='/p3/news'><img src={news}/></Link></li>
                     
                     
                     
@@ -28,10 +28,10 @@ const Home = () => {
 
                 </div>
                 <div className="linetext">
-                    {maintext}
-                    {text2}
-                    {text3}
-                    {text4}
+                <img src={maintext}/>
+                <img src={text2}/>
+                <img src={text3}/>
+                <img src={text4}/>
 
              </div>
          </div>

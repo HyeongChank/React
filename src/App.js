@@ -6,10 +6,11 @@
 // import './04/Frcst.css';
 // import Practice from "./06/Practice";
 // import Myform from "./08/Myform";
-// import Wmain from "./10/Wmain";
+import Wmain from "./10/Wmain";
 import RouteMain from "./figma/RouterMain";
 // import Routemain from "./09/Routemain";
 import { BrowserRouter } from "react-router-dom";
+import Boxoffice from "./11/Boxoffice";
 
 const App = () => {
   return (
@@ -23,11 +24,12 @@ const App = () => {
       {/* <Myform/> */}
       {/* <Practice/> */}
       {/* <BrowserRouter>*/
-     /* <Routemain/>*/
+     /* <Wmain/>*/
      /* </BrowserRouter> */}
-      <BrowserRouter>
+      {/* <BrowserRouter>
       <RouteMain/>
-      </BrowserRouter>
+      </BrowserRouter> */}
+      <Boxoffice/>
     </div>
     
   );
