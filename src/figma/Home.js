@@ -28,10 +28,10 @@ const Home = () => {
 
                 </div>
                 <div className="linetext">
-                <img src={maintext}/>
-                <img src={text2}/>
-                <img src={text3}/>
-                <img src={text4}/>
+                <div className="line1"><img src={maintext}/></div>
+                <div className="line1"><img src={text2}/></div>
+                <div className="line1"><img src={text3}/></div>
+                <div className="line1"><img src={text4}/></div>
 
              </div>
          </div>
