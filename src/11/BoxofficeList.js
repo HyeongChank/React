@@ -1,32 +1,64 @@
+import axios from "axios";
 import { useState, useEffect, useRef } from "react";
 
 
 const BoxofficeList=({targetDt})=>{
+    let infohead = ["영화명","개봉일","매출", "전일대비 증감분","신규진입여부"];
     console.log("targetdt 받음",targetDt);
-    const [mvlist, setmvlist] = useState();
+    const [mvlist, setmvlist] = useState([]);
+    const [mvcd, setmvcd] = useState();
+    const [infoh, setinfoh]= useState();
+    const showDetail =(cd)=>{
+        console.log(cd);
+        setmvcd(cd.map((i)=>
+        <div><span>{i}</span></div>));
+    }
 
+    // 선택할 때 값 나오게 하려면 결국 랜더랭 usestate 해야함
     useEffect(()=>{
         
-        const apikey = '0470353e6a09b89592446e5d2d6e08d3';
-        let url = `'http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=${apikey}&targetDt=${targetDt}'`
-        console.log("url",url);
+        const apikey = 'f5eef3421c602c6cb7ea224104795888';
+        let url = `http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=${apikey}&targetDt=${targetDt}`
+      
+       
         fetch(url)
-        .then((resp)=>resp.json)
+        .then((resp)=>resp.json())
         .then((data) =>{
-
+            console.log('url', url);
             console.log("data",data);
-            console.log(url)
-            // const d = data.boxOfficeResult.dailyBoxOfficeList;
-            // console.log(d);
-
+           
+            setmvlist(data.boxOfficeResult.dailyBoxOfficeList.map((i)=><div className="sptotal" onClick={()=>showDetail([i.movieNm, i.openDt, i.salesAmt, i.rankIntern, i.rankOldAndNew])}>{[
+                
+                <span className="sp01">{i.rank}</span>,
+                <span className="sp02">{i.movieNm}</span>, 
+                <span className="sp03">{i.audiInten}</span>
+            ]}</div>))
+            setinfoh(infohead.map((i)=><div>{i}</div>));
         })
         .catch((err)=>console.log(err))
-    },[]);
+    },[targetDt]);
+
+    useEffect(() =>{
+        
+    }, [mvlist]);
+        
 
     return(
         <>
-        <div>목록{targetDt && mvlist}</div>
-        <div>상세</div>
+        
+        <div className="list">
+            <div className="headline">
+            <h3 className="h1">순위</h3>
+            <h3 className="h2">영화명</h3>
+            <h3 className="h3">관객수</h3>
+            </div>
+            {targetDt && mvlist}</div>
+
+        <div className="detail">
+            <div className="infohead">{infoh}</div>
+            <div className="infocontent">{targetDt && mvcd}</div>
+            </div>
+       
         </>
     )
 }

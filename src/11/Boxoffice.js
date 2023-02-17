@@ -23,7 +23,6 @@ const Boxoffice =()=>{
     const handlemv = ()=>{
         console.log(mvdr.current.value)
         settargetDt(mvdr.current.value.replaceAll('-',''))
-        
     }
     return(
         <>
@@ -34,7 +33,7 @@ const Boxoffice =()=>{
                 </form>
             </div>
             <div className="mvmain">
-                <BoxofficeList targetDt={targetDt}/>
+                {targetDt && <BoxofficeList targetDt={targetDt}/>}
               
             </div>
 

@@ -26,17 +26,66 @@
     display: flex;
     justify-content: center;
     flex-direction: row;
-    width: 100vw;
-    height: 500px;
+ 
+    height: 600px;
+}
+.headline{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
 }
 .list{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     width: 60vw;
     border-right: 1px solid black;
+    background-color: rgba(127, 255, 212, 0.192);
 }
-.info{
+
+
+.sptotal{
+    width: 90%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.sptotal:hover{
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+}
+.h1{
+    width: 20%;
+}
+.h2, .h3{
+    width: 40%;
+}
+.sp01{
+    width: 20%;
+}
+.sp02, .sp03{
+    width: 40%;
+}
+
+.detail{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
     width: 40vw;
+    border: 1px solid black;
+}
+.infohead, .infocontent{
+    display: flex;
+    justify-content: center;
+    justify-content: top;
+    flex-direction: column;
+    width: 40%;
 }
