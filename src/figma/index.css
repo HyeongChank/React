@@ -52,7 +52,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 174, 0, 0.301);
+    background-color: rgba(183, 0, 255, 0.644);
+    color: white;
 }
 .info>li{
     list-style:circle;
@@ -73,7 +74,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 174, 0, 0.301);
+    background-color: rgba(47, 0, 255, 0.644);
+    color: white;
 }
 .footer{
     display: flex;
