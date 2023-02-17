@@ -33,7 +33,7 @@ const Player1 = () => {
                             유럽의 어시스트 킹으로도 잘 알려져 있는 케빈 데 브루인은 2015년 여름에 클럽에 합류했고 시티가 왜 그토록 케빈의 영입을 원했는지는 15/16 시즌의 시티 경기에서 그가 선보인 플레이를 통해 쉽게 이해할 수 있습니다.
                             케빈 데 브루인은 벨기에의 클럽 중 하나인 헹크 (Genk)에서 축구를 시작했고 재빠르게 프로 리그를 위한 선수 명단에 포함되었고 총 6득점, 17 도움을 성고시키며 헹크의 타이틀 획득을 위한 주요 선수로 자리잡았습니다.</h3>
                     </div>
-                    <div>
+                    <div className="info">
                         <h1>정보</h1>
                         <li>생년월일 : 1991년 6월 28일</li>
                         <li>위치 : DROGEN, 벨기에</li>
@@ -44,7 +44,7 @@ const Player1 = () => {
                     </div>
                 </div>
                 <div className="footer">
-                    <img src={player1small} />
+                    <Link to='/p1/player1' className="linkimg"><img src={player1small} /></Link>
                     <img src={player2} />
                     <img src={player3} />
                     <img src={player4} />

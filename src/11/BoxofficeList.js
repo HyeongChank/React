@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState, useEffect, useRef } from "react";
-
+//화요일까지
 
 const BoxofficeList=({targetDt})=>{
     let infohead = ["영화명","개봉일","매출", "전일대비 증감분","신규진입여부"];
@@ -9,18 +9,18 @@ const BoxofficeList=({targetDt})=>{
     const [mvcd, setmvcd] = useState();
     const [infoh, setinfoh]= useState();
     const showDetail =(cd)=>{
-        console.log(cd);
+        console.log("cd",cd);
         setmvcd(cd.map((i)=>
         <div><span>{i}</span></div>));
     }
-
+   
+    const [merge, setmerge] = useState([]);
+    
     // 선택할 때 값 나오게 하려면 결국 랜더랭 usestate 해야함
     useEffect(()=>{
-        
         const apikey = 'f5eef3421c602c6cb7ea224104795888';
         let url = `http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=${apikey}&targetDt=${targetDt}`
-      
-       
+ 
         fetch(url)
         .then((resp)=>resp.json())
         .then((data) =>{
@@ -34,7 +34,20 @@ const BoxofficeList=({targetDt})=>{
                 <span className="sp03">{i.audiInten}</span>
             ]}</div>))
             setinfoh(infohead.map((i)=><div>{i}</div>));
-        })
+            console.log("infoh",infoh);
+
+            let dtaillist = [data.boxOfficeResult.dailyBoxOfficeList.movieNm, data.boxOfficeResult.dailyBoxOfficeList.openDt, data.boxOfficeResult.dailyBoxOfficeList.salesAmt, data.boxOfficeResult.dailyBoxOfficeList.rankIntern, data.boxOfficeResult.dailyBoxOfficeList.rankOldAndNew] 
+            for(let i ; i<4; i++){
+            setmerge(
+                
+                infohead[i])
+             };
+             console.log("merge",merge);
+            })
+        
+            
+
+        
         .catch((err)=>console.log(err))
     },[targetDt]);
 

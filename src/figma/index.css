@@ -3,10 +3,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blue;
+    background-color: rgba(0, 204, 255, 0.192);
 }
 .header>img{
-    width: 1400px;
+    width: 1440px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,7 +32,7 @@
     flex-direction: column;
     margin-top: 2px;
 }
-li{
+.menu>li{
     list-style: none;
     margin-left: 2px;
 }
@@ -54,15 +54,63 @@ li{
     align-items: center;
     background-color: rgba(255, 174, 0, 0.301);
 }
-
+.info>li{
+    list-style:circle;
+}
+.p2content{
+    display: flex;
+    flex-direction: row;
+    
+}
+.p2content>div{
+    width: 345px;
+    height: 502px;
+    margin: 0px 2px;
+    border: 1px solid black;
+}
+.p2content>div>h1{
+    height: 102px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 174, 0, 0.301);
+}
 .footer{
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
-.footer>img{
+.footer>img, .linkimg>img{
     margin: 2px 2px;
     border: 1px solid black;
     border-radius: 20px;
+}
+.newscontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 690px;   
+    
+}
+.news{
+    width: 690px;
+    background-color: orange;
+    color: white;
+}
+.ncon1, .news{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 2px 0px ;
+    border: 1px solid black;
+}
+.ncon1{
+    height: 200px;
+    font-size: 13px;
+}
+.nimg{
+    margin-right: 10px;
 }

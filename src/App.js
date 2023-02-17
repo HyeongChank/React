@@ -26,10 +26,10 @@ const App = () => {
       {/* <BrowserRouter>*/
      /* <Wmain/>*/
      /* </BrowserRouter> */}
-      {/* <BrowserRouter>
+      <BrowserRouter>
       <RouteMain/>
-      </BrowserRouter> */}
-      <Boxoffice/>
+      </BrowserRouter>
+      {/* <Boxoffice/> */}
     </div>
     
   );

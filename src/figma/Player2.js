@@ -34,8 +34,8 @@ const Player2 = () => {
                             독일에서 힘이 넘치고 지능적인 미드필더로 잘 알려져 있는 일카이 귄도간은 2016년 여름에 시티에 합류했습니다.
                             귄도간은 샬케 04와 Vfl 보훔 등에서 유스 생활을 했으며 시티에 합류하기 전에는 Vfl 보훔 II(2008-2009), 1. FC 뉴른베르크(2009-2011), 보루시아 도르트문트(2011-2016)의 시니어 팀에서 플레이를 펼쳤습니다.</h3>
                     </div>
-                    <div>
-                        <h1>프로필</h1>
+                    <div className="info">
+                        <h1>정보</h1>
                         <li>생년월일 : 2000년 7월 21일</li>
                         <li>위치 : DROGEN, 잉글랜드</li>
                         <li>국적 : 노르웨이</li>
@@ -46,7 +46,7 @@ const Player2 = () => {
                 </div>
       
                 <div className="footer">
-                    <img src={player1small} />
+                    <Link to='/p1/player1' className="linkimg"><img src={player1small} /></Link>
                     <img src={player2} />
                     <img src={player3} />
                     <img src={player4} />
