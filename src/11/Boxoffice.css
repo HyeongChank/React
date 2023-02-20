@@ -77,15 +77,21 @@
 .detail{
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     width: 40vw;
     border: 1px solid black;
+    background-color: yellow;
 }
-.infohead, .infocontent{
+.detail2{
     display: flex;
     justify-content: center;
-    justify-content: top;
+    flex-direction: row;
+
+}
+.s1, .s2{
+    display: flex;
+    justify-content: center;
     flex-direction: column;
-    width: 40%;
+    margin: 5px;
 }

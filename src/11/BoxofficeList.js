@@ -1,20 +1,20 @@
 import axios from "axios";
 import { useState, useEffect, useRef } from "react";
+import Boxofficedetail from "./Boxofficedetail";
 //화요일까지
 
 const BoxofficeList=({targetDt})=>{
-    let infohead = ["영화명","개봉일","매출", "전일대비 증감분","신규진입여부"];
+
     console.log("targetdt 받음",targetDt);
     const [mvlist, setmvlist] = useState([]);
     const [mvcd, setmvcd] = useState();
-    const [infoh, setinfoh]= useState();
+
     const showDetail =(cd)=>{
         console.log("cd",cd);
         setmvcd(cd.map((i)=>
         <div><span>{i}</span></div>));
     }
-   
-    const [merge, setmerge] = useState([]);
+
     
     // 선택할 때 값 나오게 하려면 결국 랜더랭 usestate 해야함
     useEffect(()=>{
@@ -24,8 +24,8 @@ const BoxofficeList=({targetDt})=>{
         fetch(url)
         .then((resp)=>resp.json())
         .then((data) =>{
-            console.log('url', url);
-            console.log("data",data);
+            // console.log('url', url);
+            // console.log("data",data);
            
             setmvlist(data.boxOfficeResult.dailyBoxOfficeList.map((i)=><div className="sptotal" onClick={()=>showDetail([i.movieNm, i.openDt, i.salesAmt, i.rankIntern, i.rankOldAndNew])}>{[
                 
@@ -33,16 +33,14 @@ const BoxofficeList=({targetDt})=>{
                 <span className="sp02">{i.movieNm}</span>, 
                 <span className="sp03">{i.audiInten}</span>
             ]}</div>))
-            setinfoh(infohead.map((i)=><div>{i}</div>));
-            console.log("infoh",infoh);
-
-            let dtaillist = [data.boxOfficeResult.dailyBoxOfficeList.movieNm, data.boxOfficeResult.dailyBoxOfficeList.openDt, data.boxOfficeResult.dailyBoxOfficeList.salesAmt, data.boxOfficeResult.dailyBoxOfficeList.rankIntern, data.boxOfficeResult.dailyBoxOfficeList.rankOldAndNew] 
-            for(let i ; i<4; i++){
-            setmerge(
+        
+            // let dtaillist = [data.boxOfficeResult.dailyBoxOfficeList.movieNm, data.boxOfficeResult.dailyBoxOfficeList.openDt, data.boxOfficeResult.dailyBoxOfficeList.salesAmt, data.boxOfficeResult.dailyBoxOfficeList.rankIntern, data.boxOfficeResult.dailyBoxOfficeList.rankOldAndNew] 
+            // for(let i ; i<4; i++){
+            // setmerge(
                 
-                infohead[i])
-             };
-             console.log("merge",merge);
+            //     infohead[i])
+            //  };
+            //  console.log("merge",merge);
             })
         
             
@@ -68,8 +66,8 @@ const BoxofficeList=({targetDt})=>{
             {targetDt && mvlist}</div>
 
         <div className="detail">
-            <div className="infohead">{infoh}</div>
-            <div className="infocontent">{targetDt && mvcd}</div>
+            <h2>이달의 대표영화</h2>
+            {targetDt && <Boxofficedetail targetDt={targetDt}/>}
             </div>
        
         </>
